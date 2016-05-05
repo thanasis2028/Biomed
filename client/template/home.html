@@ -1,14 +1,23 @@
 <template name="home">
   <body>
+
     <nav class="teal lighten-2 z-depth-2">
    <div class="nav-wrapper">
-     <a href="/" class="brand-logo">Health</a>
+     <a href="/" class="brand-logo center">Health</a>
      <ul class="right hide-on-med-and-down">
        <li><a href="/Doctor"><i class="material-icons prefix">account_circle</i></a></li>
 
      </ul>
+     <ul  id="slide-out" class="side-nav  ">
+       <li><a href="#!">Quiz</a></li>
+       <li ><a href="#!">Login</a></li>
+     </ul>
+     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
    </div>
  </nav>
+
+
 
 
     <div  class="fade" style="margin-left:10%; margin-right:10%;margin-top:5%">
@@ -35,12 +44,23 @@
   $( document ).ready(function() {
         var h1 = $("h1");
         h1.animate({left: '0px'}, "slow");
-        h1.animate({fontSize: '8em'}, "slow");
+        h1.animate({fontSize: '6em'}, "slow");
     });
 
   $(document).ready(function(){
 // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
 $('.modal-trigger').leanModal();
 });
+  </script>
+  <script type="text/javascript">
+    //mobile menu
+
+  $('.button-collapse').sideNav({
+      menuWidth: 240, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+
   </script>
 </template>

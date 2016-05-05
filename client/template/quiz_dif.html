@@ -1,0 +1,137 @@
+<template name="quiz_dif">
+  <body>
+    <nav class="teal lighten-2 z-depth-2">
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo center">Health</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/Doctor"><i class="material-icons prefix">account_circle</i></a></li>
+
+        </ul>
+        <ul  id="slide-out" class="side-nav  ">
+          <li><a href="#!">Quiz</a></li>
+          <li><a href="#!">Login</a></li>
+        </ul>
+        <a href="/signup"  ><i class="material-icons prefix">chevron_left</i></a>
+
+      </div>
+    </nav>
+
+    <div  class="fade" style="margin-left:10%; margin-right:10%;margin-top:5%">
+
+      <form>
+        <p>I am often confused about the way I am feeling inside </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="test1" value="0"/>
+          <label for="test1">not true</label>
+        </p>
+        <p>
+          <input class="with-gap"  name="group1" type="radio" id="test2" value="1"/>
+          <label for="test2">a bit true</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio"  id="test3" value="2"  />
+          <label for="test3">true</label>
+        </p>
+        <p>  I feel things in my body that even doctors dont understand</p>
+        <p>
+          <input class="with-gap" name="group2" type="radio" id="test4" value="0"/>
+          <label for="test4">not true</label>
+        </p>
+        <p>
+            <input class="with-gap"  name="group2" type="radio" id="test5" value="1"/>
+          <label for="test5">a bit true</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group2" type="radio" id="test6" value="2"/>
+          <label for="test6">true</label>
+        </p>
+        <p> When I am upset, I dont know if I am sad, scared or angry</p>
+        <p>
+          <input class="with-gap" name="group3" type="radio" id="test7" value="0"/>
+          <label for="test7">not true</label>
+        </p>
+        <p>
+          <input class="with-gap"  name="group3" type="radio" id="test8" value="1"/>
+          <label for="test8">a bit true</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group3" type="radio" id="test9" value="2"/>
+          <label for="test9">true</label>
+        </p>
+        <p> I am often puzzled by things that I feel in my body</p>
+        <p>
+          <input class="with-gap" name="group4" type="radio" id="test10" value="0"/>
+          <label for="test10">not true</label>
+        </p>
+        <p>
+          <input class="with-gap"  name="group4" type="radio" id="test11" value="1"/>
+          <label for="test11">a bit true</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group4" type="radio" id="test12" value="2"/>
+          <label for="test12">true</label>
+        </p>
+        <p>  Sometimes I cant find the words to say how I feel inside</p>
+        <p>
+          <input class="with-gap" name="group5" type="radio" id="test13" value="0"/>
+          <label for="test13">not true</label>
+        </p>
+        <p>
+          <input class="with-gap"  name="group5" type="radio" id="test14" value="1"/>
+          <label for="test14">a bit true</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group5" type="radio" id="test15" value="2"/>
+          <label for="test15">true</label>
+        </p>
+        <p> I dont know whats going on inside me</p>
+        <p>
+          <input class="with-gap" name="group6" type="radio" id="test16" value="0"/>
+          <label for="test16">not true</label>
+        </p>
+        <p>
+          <input class="with-gap"  name="group6" type="radio" id="test17" value="1"/>
+          <label for="test17">a bit true</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group6" type="radio" id="test18" value="2"/>
+          <label for="test18">true</label>
+        </p>
+        <p>   I often dont know why I am angry</p>
+        <p>
+          <input class="with-gap" name="group7" type="radio" id="test19" value="0"/>
+          <label for="test19">not true</label>
+        </p>
+        <p>
+          <input class="with-gap"  name="group7" type="radio" id="test20" value="1"/>
+          <label for="test20">a bit true</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group7" type="radio" id="test21" value="2"/>
+          <label for="test21">true</label>
+        </p>
+
+
+      </form>
+
+      <a quiz button class="waves-effect waves-light btn" style="float:right">next</a>
+
+    </div>
+    <script type="text/json">
+
+    </script>
+    <script type="text/javascript">
+    //mobile menu
+
+    $('.button-collapse').sideNav({
+      menuWidth: 240, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+
+  </script>
+</body>
+
+
+</template>
