@@ -1,8 +1,16 @@
 
+
+
 Meteor.methods({
 
     SignupUser: function (name,lastname,phone,email) {
-     Users.update({Code : code}, { $set: { Reason : value } });
+     Users.insert({name:name,lastname:lastname,phone:phone,email:email });
    }
+
+
+
    }
+
+
+
 );

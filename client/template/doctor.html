@@ -1,0 +1,74 @@
+<template name="doctor">
+  <body>
+    <nav class="teal lighten-2 z-depth-2">
+   <div class="nav-wrapper">
+     <a href="/" class="brand-logo center">Health</a>
+     <ul class="right hide-on-med-and-down">
+       <li><a href="/Doctor"><i class="material-icons prefix">account_circle</i></a></li>
+
+     </ul>
+     <ul  id="slide-out" class="side-nav  ">
+       <li><a href="#!">Quiz</a></li>
+       <li><a href="#!">Login</a></li>
+     </ul>
+     <a href="/"  ><i class="material-icons prefix">chevron_left</i></a>
+
+   </div>
+ </nav>
+
+
+    <div class="z-depth-2" style="margin-left:10%; margin-right:10%;margin-top:5%">
+
+
+      <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input  id="Username" type="text" class="validate">
+            <label for="Username">Username</label>
+          </div>
+        </div>
+
+          <div class="input-field col s12 ">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+
+
+        <div class="row">
+
+
+    <!-- Modal Trigger -->
+    <button check class="btn waves-effect waves-light " type="submit" style="float:right">Submit
+        <i class="material-icons right">send</i>
+      </button>
+
+
+        </div>
+      </form>
+    </div>
+      </div>
+
+  </body>
+
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+$('.modal-trigger').leanModal();
+});
+  </script>
+  <script type="text/javascript">
+    //mobile menu
+
+  $('.button-collapse').sideNav({
+      menuWidth: 240, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+
+  </script>
+</template>
