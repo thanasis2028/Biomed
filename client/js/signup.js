@@ -8,7 +8,6 @@ Template.signup.events({
       var age = document.getElementById('age').value;
 
       Meteor.call("SignupUser",name,lastname,phone,age);
-alert(3);
         window.location.href = '/quiz';
 
 
