@@ -38,22 +38,22 @@
 
         <div class="row">
           <div class="input-field col s12">
-            <i class="material-icons prefix">phone</i>
+            <i class="material-icons prefix">account_circle</i>
 
-            <input id="phone" type="text" class="validate">
-            <label for="phone">telephone</label>
+            <input id="age" type="text" class="validate">
+            <label for="age">age</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <i class="material-icons prefix">email</i>
+            <i class="material-icons prefix">phone</i>
 
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
+            <input id="phone" type="text" class="validate">
+            <label for="phone">phone</label>
           </div>
 
     <!-- Modal Trigger -->
-    <button class="btn waves-effect waves-light " type="submit" href="#modal1" trigger1 style="float:right">Submit
+    <button class="btn waves-effect waves-light modal-trigger" type="submit" href="#modal1" trigger1 style="float:right">Submit
         <i class="material-icons right">send</i>
       </button>
 
@@ -83,8 +83,10 @@
 
   <script type="text/javascript">
   $(document).ready(function(){
-// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-});
+     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+     $('.modal-trigger').leanModal();
+   });
+
   </script>
   <script type="text/javascript">
     //mobile menu
